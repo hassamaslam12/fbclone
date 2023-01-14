@@ -5,9 +5,141 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: aliceblue;
+  background-color: rgb(24, 25, 26);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.pageManage{
+ flex-grow: 1 ;
+ display: flex;
+ align-items: center;
+ justify-content: center; 
+}
+
+hr{
+  width: 200px;
+}
+.leftSide{
+  flex-grow: 1 ;
+  margin-top: 20px;
+  display: inline-block;
+  flex-direction: column;
+  max-width: 400px;
+  align-self: flex-start;
+  
+}
+
+.leftSide>button{
+  padding :5px;
+  min-width: 250px;
+  max-width: 250px;
+  background-color: transparent;
+  color: white;
+  border-radius: 40px;
+  display: flex;
+  min-height: 30px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+.leftSide>button:hover{
+  background-color: gray;
+}
+
+.attributes>a{
+  margin-right: 4px;
+}
+.attributes>a:hover{
+  color: purple;
+}
+
+
+.header{
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+
+}
+
+.searchBar{
+  max-height: 35px;
+  margin-top: 30px;
+  border-radius: 50px;
+  width: 550px;
+  padding-left: 20px;
+}
+
+.picButton{
+  margin-top: 20px;
+  border-radius: 100%;
+}
+.picButton>img:hover{
+  width: 100px;
+  height: 100px;
+}
+
+.pic{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.headOfPost{
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.name{
+  font-weight: 700;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+.date{
+
+margin-top: 0%;
+font-size: small;
+}
+
+.detailsOfThePost{
+  display: flex;
+  margin-bottom: 0%;
+  flex-direction: column;
+  max-height: 50px;
+  margin-left: 5px;
+}
+
+.post{
+  margin-left: 20px;
+  max-width: 400px;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 15px;
+  background-color: rgb(36,37,38);
+  display: block;
+  flex-direction: column;
+  align-self: flex-end;
+  /* margin-left: 400px; */
+}
+
+.topRightPic{
+  border-radius: 50px;
+}
+
+.buttonDown{
+  min-width: 132px;
+  font-weight: 550;
+  flex-direction: row;
+  color: darkgray;
+  background-color: rgb(36,37,38);
+  
+}
+.buttonDown:hover{
+  background-color: rgba(215, 211, 211,0.3);
+}
+
+.left{
+  display: flex;
 }
